@@ -14,7 +14,7 @@ function ImageUpload({ endpoint, onChange, value }: ImageUploadProps) {
     if (value) {
         return (
             <div className="relative size-40">
-                <Image src={value} alt="Upload" className="rounded-md size-40 object-cover" />
+                <Image src={value} alt="Upload" className="rounded-md size-40 object-cover" height={500} width={500} />
                 <button
                     onClick={() => onChange("")}
                     className="absolute top-0 right-0 p-1 bg-red-500 rounded-full shadow-sm"

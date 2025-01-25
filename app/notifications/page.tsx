@@ -101,6 +101,8 @@ function Notifications() {
                                                             <Image
                                                                 src={notification.post.image}
                                                                 alt="Post content"
+                                                                height={500}
+                                                                width={500}
                                                                 className="mt-2 rounded-md w-full max-w-[200px] h-auto object-cover"
                                                             />
                                                         )}
