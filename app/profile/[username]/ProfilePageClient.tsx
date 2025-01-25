@@ -62,6 +62,7 @@ function ProfilePageClient({ isFollowing: initialIsFollowing, user, posts, liked
             setIsFollowing(!isFollowing);
         } catch (error) {
             toast.error("Failed to update follow status");
+            throw (error)
         } finally {
             setIsUpdatingFollow(false);
         }

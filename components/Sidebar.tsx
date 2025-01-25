@@ -1,6 +1,6 @@
 import { SignInButton, SignUpButton } from '@clerk/nextjs';
 import { currentUser } from '@clerk/nextjs/server'
-import React, { use } from 'react'
+import React from 'react'
 import { Button } from './ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { getUserByClerkId } from '@/actions/user.action';

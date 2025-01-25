@@ -35,6 +35,7 @@ function PostCard({ post, dbUserId }: { post: Post; dbUserId: string | null }) {
         } catch (error) {
             setOptimisticLikes(post._count.likes)
             setHasLiked(post.likes.some(like => like.userId === dbUserId))
+            throw (error)
 
         }
         finally {
@@ -53,6 +54,7 @@ function PostCard({ post, dbUserId }: { post: Post; dbUserId: string | null }) {
             }
         } catch (error) {
             toast.error("Failed to add comment");
+            throw (error)
         } finally {
             setIsCommenting(false);
         }
@@ -67,6 +69,7 @@ function PostCard({ post, dbUserId }: { post: Post; dbUserId: string | null }) {
             else throw new Error(result.error);
         } catch (error) {
             toast.error("Failed to delete post");
+            throw (error)
         } finally {
             setIsDeleting(false);
         }
