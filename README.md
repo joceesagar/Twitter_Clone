@@ -10,6 +10,7 @@ A feature-rich Twitter clone built with modern web technologies. This project re
 - Responsive design using [shadcn/ui](https://ui.shadcn.dev).
 - Seamless database integration using [Neon PostgreSQL](https://neon.tech).
 - [Prisma ORM](https://www.prisma.io) for efficient database management.
+- [uploadthing](https://uploadthing.com/) for efficient image storage.
 
 ## 🛠️ Tech Stack
 
